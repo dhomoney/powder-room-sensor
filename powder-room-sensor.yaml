@@ -1,0 +1,18 @@
+substitutions:
+  name: apollo-msr-1-098580
+  friendly_name: Powder Room Sensor
+packages:
+  ApolloAutomation.MSR-1: github://ApolloAutomation/MSR-1/Integrations/ESPHome/MSR-1.yaml
+esphome:
+  name: ${name}
+  name_add_mac_suffix: false
+  friendly_name: ${friendly_name}
+api:
+  encryption:
+    key: oelfaPHP2bpnptd7zzVSEk7WEpY5pDKprdyu/vVwF7Y=
+
+logger:
+
+wifi:
+  ssid: !secret wifi_ssid
+  password: !secret wifi_password
